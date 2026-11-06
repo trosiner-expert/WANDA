@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WANDA Arbeitsplatz Setup</title>
+
+<style>
+
+:root{
+    --primary:#f28c28;
+    --secondary:#d97706;
+    --success:#28a745;
+    --background:#f4f6f9;
+    --card:#ffffff;
+    --text:#222;
+    --border:#e5e5e5;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:var(--background);
+    font-family:'Segoe UI',Arial,sans-serif;
+    color:var(--text);
+}
+
+header{
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        #f7a84d
+    );
+    color:white;
+    padding:0;
+}
+
+.header-top{
+    background:#ffffff;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid var(--border);
+}
+
+.logo{
+    height:40px;
+}
+
+.support{
+    color:#444;
+    text-align:right;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    margin:0;
+    font-size:3rem;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.1rem;
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.card{
+    background:var(--card);
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+h2{
+    color:var(--primary);
+    margin-top:0;
+}
+
+.download{
+    display:inline-block;
+    background:var(--primary);
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.download:hover{
+    background:var(--secondary);
+}
+
+.version{
+    color:var(--success);
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.feature{
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:15px;
+    background:#fafafa;
+}
+
+ul,
+ol{
+    line-height:1.8;
+}
+
+footer{
+    text-align:center;
+    color:#666;
+    padding:30px;
+    background:#ffffff;
+    border-top:1px solid var(--border);
+}
+
+.contact-box{
+    background:#fff7ed;
+    border-left:5px solid var(--primary);
+    padding:15px;
+    border-radius:6px;
+}
+
+@media(max-width:768px){
+
+    .header-top{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .support{
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-top">
+
+        <img src="expert_banner.bmp"
+             alt="expert IT-Betrieb"
+             class="logo">
+
+        <div class="support">
+            ☎ Hotline: <strong>0511 / 7808 204</strong><br>
+            ✉ sw-hotline@expert.de
+        </div>
+
+    </div>
+
+    <div class="hero">
+
+        <h1>WANDA Arbeitsplatz Setup</h1>
+
+        <p>
+            Automatisierte Einrichtung eines neuen WANDA-Arbeitsplatzes inklusive PCMS, NeoPrint Druckdienst und Citrix Workspace App.
+        </p>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Download</h2>
+
+        <p class="version">
+            Version 3.0
+        </p>
+
+        <p>
+            Das Setup richtet einen neuen Arbeitsplatz automatisch für die Nutzung von WANDA ein.
+        </p>
+
+        <a class="download"
+           href="expert_Arbeitsplatz_2026.11.04.exe">
+           Setup herunterladen
+        </a>
+
+        <p style="margin-top:15px;">
+            Downloadgröße: ca. 487 MB
+        </p>
+	<p>
+	eventuellen Warnhinweis ignorieren und "Beibehalten" klicken</li>
+	</p>
+    </div>
+
+    <div class="card">
+
+        <h2>Installierte Komponenten</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                ✅ PCMS 4.0
+            </div>
+
+            <div class="feature">
+                ✅ NeoPrint Druckdienst
+            </div>
+
+            <div class="feature">
+                ✅ Citrix Workspace App 26.3.20
+            </div>
+
+            <div class="feature">
+                ✅ .NET Framework 3.5 (falls erforderlich)
+            </div>
+
+            <div class="feature">
+                ✅ Windows-Dienstkonfigurationen
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Voraussetzungen</h2>
+
+        <ul>
+            <li>Windows 11 Professional</li>
+            <li>Windows 11 Enterprise</li>
+            <li>Windows 11 IoT Enterprise</li>
+            <li>Lokale Administratorrechte</li>
+            <li>Internet- bzw. Netzwerkverbindung empfohlen</li>
+            <li>Bei PC-Tausch müssen PC-Name und IP-Adresse übernommen werden</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Installation</h2>
+
+        <ol>
+            <li>Setup herunterladen</li>
+	    <li>eventuellen Warnhinweis ignorieren und "Beibehalten" klicken</li>
+            <li>Setup als Administrator starten</li>
+            <li>Standort eingeben (z.B. TV, WW-Klein, Büro, Service oder Kasse)</li>
+            <li>Druckerinstallation ist aktiv, ggf. deaktivieren</li>
+            <li>Installation starten</li>
+            <li>Nach Abschluss Citrix Workspace starten</li>
+        </ol>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Fehlersuche</h2>
+
+        <h3>Citrix-Farm nicht erreichbar</h3>
+
+        <ul>
+            <li>Netzwerkverbindung prüfen</li>
+            <li>VPN-Verbindung prüfen</li>
+            <li>DNS-Auflösung prüfen</li>
+        </ul>
+
+        <h3>Druckdienst fehlt</h3>
+
+        <p>
+            Installer erneut starten und den Reparaturmodus für den Druckdienst ausführen.
+        </p>
+
+        <h3>PCMS fehlt</h3>
+
+        <p>
+            Installer erneut starten und den Reparaturmodus für PCMS ausführen.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Support</h2>
+
+        <div class="contact-box">
+
+            <strong>IT-Betrieb</strong><br><br>
+
+            ☎ 0511 / 7808 204<br>
+            ✉ sw-hotline@expert.de
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Gültigkeit</h2>
+
+        <p>
+            Diese Installationsversion ist gültig bis 01.03.2027.
+        </p>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <strong>WANDA Arbeitsplatz Setup</strong><br>
+
+    Stand 04.11.2026 · Version 3.0<br>
+    IT-Betrieb · 0511 / 7808 204 · sw-hotline@expert.de
+
+</footer>
+
+</body>
+</html>
